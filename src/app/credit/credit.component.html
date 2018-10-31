@@ -1,0 +1,335 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/register">Register</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+  <form>
+    <h3>
+      Identity
+    </h3>
+    <hr>
+    <br>
+    <div class="row">
+      <div class="form-group col">
+        <label for="inputAddress" style="color:  #056dae; font-size: small">First Name</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="firstname">
+      </div>
+      <div class="form-group col">
+        <label for="inputMiddle" style="color:  #056dae; font-size: small"> Middle Name</label>
+        <input type="text" class="form-control" id="inputMiddle" placeholder="M.I.">
+      </div>
+      <div class="form-group col">
+        <label for="inputlastName4" style="color:  #056dae; font-size: small">Last Name</label>
+        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+      </div>
+    </div>
+    <br>
+    <h3>Gender</h3>
+    <hr>
+    <div class="row">
+      <div class="form-group col-md-1">
+        <label for="inputgender" style="color:  #056dae; font-size: small">Male</label>
+        <input type="radio" class="form-control" id="gender" placeholder="male">
+      </div>
+      <div class="form-group col-md-1">
+        <label for="inputgender" style="color:  #056dae; font-size: small">Female</label>
+        <input type="radio" class="form-control" id="gender" placeholder="female">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="form-group col-md-4">
+        <label for="COB" style="color:  #056dae; font-size: small">Country of Birth</label>
+        <input type="text" class="form-control" id="coB" placeholder="Country of Birth">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="form-group col-md-4">
+        <label for="CON" style="color:  #056dae; font-size: small">Country of Nationality</label>
+        <input type="text" class="form-control" placeholder="Country of Nationality">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <h3>Primary Address</h3>
+        <hr>
+      </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputF4" style="color:  #056dae; font-size: small;">Street Address</label>
+        <input type="text" class="form-control" name="streetAddress" placeholder="Street Address">
+      </div>
+
+        <div class="form-group col-md-4">
+          <label for="inputF4" style="color:  #056dae; font-size: small;">Street Address</label>
+          <input type="text" class="form-control" name="Apt" placeholder="Apt/Suite #"><br> 
+        </div>
+      </div>  
+
+      <div class="row">
+        <div class="form-group col-md-3">
+          <label for="inputF4" style="color:  #056dae; font-size: small;">City</label>
+          <input type="text" class="form-control" name="city" placeholder="City">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="inputF4" style="color:  #056dae; font-size: small;">State</label>
+            <input type="text" class="form-control" name="state" placeholder="State">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="inputF4" style="color:  #056dae; font-size: small;">Zipcode</label>
+            <input type="text" class="form-control" name="zipcode" placeholder="Zipcode">
+        </div>          
+      </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <input type="checkbox" name="different" value="different mailing address"> I have a different mailing
+            address
+            <br>
+            <br>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <h3>Contact Information</h3>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="inputF4" style="color:  #056dae; font-size: small;">Email</label>
+            <input type="txt" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputF4" style="color:  #056dae; font-size: small;">Phone</label>
+            <input type="tel" class="form-control" name="phone" placeholder="phone">
+          </div>
+        </div><br>
+       
+        <div class="row">
+          <div class="col-md-2">
+            <h5>Are you currently a US Citizen?</h5>
+          </div>
+            <div class="form-group col-md-2">
+              <label for="inputgender" style="color:  #056dae; font-size: small">Yes</label>
+              <input type="radio" class="form-control" id="gender" placeholder="male">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputgender" style="color:  #056dae; font-size: small">No</label>
+              <input type="radio" class="form-control" id="gender" placeholder="female">
+            </div>
+         
+        </div><br>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Submit
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Account Successfully Created!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Account ID: <b>1234-6789</b><br><br>
+                    Account Number: <b>0000-0000-0000-0000</b>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <input type="submit" value="submit"> -->
+          </div>
+        </div>
+  </form>
+</div>
+<!-- <form action="" method="POST">
+  <div class="form-row">
+    <h1>Identity</h1>
+    <div class="form-group container">
+      <div class="form-group col-md-2">
+        <label for="inputAddress" style="color:  #056dae; font-size: small">first Name</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="firstname">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputMiddle" style="color:  #056dae; font-size: small"> Middle Name</label>
+        <input type="text" class="form-control" id="inputMiddle" placeholder="M.I.">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputlastName4" style="color:  #056dae; font-size: small">Last Name</label>
+        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+      </div>
+      <div class="form-group col-md-1">
+        <label for="inputgender" style="color:  #056dae; font-size: small">Male</label>
+        <input type="radio" class="form-control" id="gender" placeholder="male">
+      </div>
+      <div class="form-group col-md-1">
+        <label for="inputgender" style="color:  #056dae; font-size: small">Female</label>
+        <input type="radio" class="form-control" id="gender" placeholder="female">
+      </div>
+      
+      <div class="form-group container">
+      <div class="form-group col-md-4">
+        <label for="COB" style="color:  #056dae; font-size: small">Country of Birth</label>
+        <input type="text" class="form-control" id="coB" placeholder="Country of Birth">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="CON" style="color:  #056dae; font-size: small">Country of Nationality</label>
+        <input type="text" class="form-control" placeholder="Country of Nationality">
+      </div>
+    </div>
+    </div>
+
+    
+    <h1>Primary Address</h1>
+    <div class="form-group col-md-4">
+    <input type="text" name="streetAddress" placeholder="Street Address">
+    <input type="text" name="Apt" placeholder="Apt/Suite #"><br>
+    <input type="text" name="city" placeholder="City">
+    <input type="text" name="state" placeholder="State">
+    <input type="text" name="zipcode" placeholder="Zipcode">
+    </div>
+    <br>
+    <input type="checkbox" name="different" value="different mailing address"> I have a different mailing address <br>
+    <br>
+    <h1>Contact Information</h1>
+    <input type="txt" name="email" placeholder="Email">
+    <input type="tel" name="phone" placeholder="phone">
+    <br><br>
+    <h5>Are you currently a US Citizen?</h5>
+    <input type="submit" value="submit">
+
+  </div>
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="card"> 
+    <div class="card-header">
+      <h1>Credit Account</h1>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputF4">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName4" placeholder="First Name">
+              </div>
+              <div class="form-group col-md-2">
+                  <label for="inputMiddle">Middle Name</label>
+                  <input type="text" class="form-control" id="inputMiddle" placeholder="M.I.">
+                </div>
+              <div class="form-group col-md-4">
+                <label for="inputlastName4">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <!-- <div class="form-group">
+                <label for="inputAddress">Address2</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Apt #">
+              </div> -->
+<!-- <div class="form-group col-md-4">
+              <label for="inputAddress2">Email</label>
+              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputAddress2">Phone Number</label>
+                <input type="text" class="form-control" id="inputPhoneNumber" placeholder="Phone number">
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div><
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select><br>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              
+            </div>
+            <div class="submitButton">
+            <button type="submit" class="btn btn-primary" style="font: size 15px;">Submit</button>
+          </div>
+          </form>
+    </div>
+    <div class="backButton">
+        <button type="button" class="btn btn-link backButton"  style="position: absolute; left: 0%; right: 10%; bottom: 0%;" (click)='onBack()'>Back</button>
+    </div>
+    
+    
+  </div>
+   -->

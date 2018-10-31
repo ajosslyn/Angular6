@@ -1,0 +1,19 @@
+.card {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    height: 380px;
+    border-radius: 4px;
+}
+.backButton {
+    padding: 10px;
+}
+.card-header{
+    background-color: #056dae;
+    font-family:"OpenSans-Regular","Arial",sans-serif;
+    
+}
+
+h1{
+    color: white;
+}

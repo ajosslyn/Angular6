@@ -1,0 +1,10 @@
+.card {
+    width: 35%;
+    margin-left: 35%;
+    margin-top: 10%;
+    height: 350px;
+    border-radius: 4px;
+}
+form {
+    padding: 10px;
+}
